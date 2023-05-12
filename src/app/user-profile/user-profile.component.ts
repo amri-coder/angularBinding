@@ -1,10 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input, ViewChild } from '@angular/core';
 
-@Component({
-  selector: 'app-user-profile',
-  templateUrl: './user-profile.component.html',
-  styleUrls: ['./user-profile.component.css'],
-})
 class User {
   name: string;
   firstName: string;
@@ -25,6 +20,11 @@ class User {
     this.photo = photo;
   }
 }
+@Component({
+  selector: 'app-user-profile',
+  templateUrl: './user-profile.component.html',
+  styleUrls: ['./user-profile.component.css'],
+})
 export class UserProfileComponent {
   user: User = new User(
     'Doe',
@@ -35,7 +35,7 @@ export class UserProfileComponent {
   );
   showMyAge: boolean = false;
 
-  constructor() {}
+  //constructor() {}
   // ngOnInit(): void {}
 
   buttonShowHiddenAge() {
