@@ -4,7 +4,7 @@
   <div class="card-body">
     <h4>Nom : {{user.name}}</h4>
     <h4>Prénom : {{user.firstName}}</h4>
-    <span [hidden]="!showMyAge">{{user.age}}</span>
+    <span [hidden]="!showMyAge">{{user.age}} ans</span>
     <p>{{user.quote}}</p>
     <input type="text" [(ngModel)]="user.quote"><br />
     <button (click)="buttonShowHiddenAge()">Afficher/Masque mon âge</button>

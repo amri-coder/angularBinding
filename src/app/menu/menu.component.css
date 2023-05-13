@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: aquamarine;
+  margin-bottom: 5%;
+}
+
+nav h2 {
+  padding-left: 10%;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 70%;
+
+}
+
+nav ul a {
+  text-decoration: none;
+}
