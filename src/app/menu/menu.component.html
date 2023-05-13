@@ -15,4 +15,14 @@
     </li>
 
   </ul>
+
+  <div class="OnlySmartphones">
+    <button (click)="showMenuForSmartphones()">
+      <h2>X</h2>
+    </button>
+  </div>
 </nav>
+<div id="myModal" class="modal" *ngIf="showMenu">
+  <span> <a routerLink="signup">Sign up</a></span>
+  <span> <a routerLink="user">User</a></span>
+</div>

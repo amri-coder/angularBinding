@@ -24,9 +24,27 @@ nav ul a {
   text-decoration: none;
 }
 
+nav .OnlySmartphones {
+  display: none;
+}
+
+.modal {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 800px) {
   nav ul {
     padding-left: 60%;
+  }
+
+  nav .OnlySmartphones {
+    display: none;
+  }
+
+  .modal {
+    display: none;
   }
 }
 
@@ -36,20 +54,35 @@ nav ul a {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   nav ul {
-    padding-left: 50%;
+    display: none;
   }
-}
 
-@media screen and (max-width: 300px) {
-  nav ul {
-    padding-left: 30%;
+  nav .OnlySmartphones {
+    display: flex;
+    flex-direction: row;
+    padding-left: 60%;
   }
-}
 
-@media screen and (max-width: 200px) {
-  nav ul {
-    padding-left: 5%;
+  nav .OnlySmartphones button {
+    background-color: aquamarine;
+    border: none;
   }
+
+  .modal {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: aquamarine;
+  }
+
+  .modal a {
+    text-decoration: none;
+
+  }
+
 }

@@ -6,4 +6,15 @@ import { SignupComponent } from '../signup/signup.component';
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.css'],
 })
-export class MenuComponent {}
+export class MenuComponent {
+  showMenu: boolean = false;
+  constructor() {}
+
+  showMenuForSmartphones() {
+    if (this.showMenu === false) {
+      this.showMenu = true;
+    } else {
+      this.showMenu = false;
+    }
+  }
+}
