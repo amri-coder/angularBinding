@@ -4,7 +4,7 @@
   -webkit-border-radius: 17px 17px 17px 17px;
   -moz-border-radius: 17px 17px 17px 17px;
 
-  background-color: #7FFFD4;
+  background-color: #ECECEE;
   display: block;
   margin: auto;
 
@@ -13,7 +13,7 @@
 
 .card img {
   width: 100%;
-  border: 1px solid black;
+  border: 1px solid #ECECEE;
 }
 
 .card .card-body {
